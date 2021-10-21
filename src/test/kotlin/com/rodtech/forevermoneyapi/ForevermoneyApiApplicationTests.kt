@@ -1,0 +1,13 @@
+package com.rodtech.forevermoneyapi
+
+import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
+
+@SpringBootTest
+class ForevermoneyApiApplicationTests {
+
+	@Test
+	fun contextLoads() {
+	}
+
+}
