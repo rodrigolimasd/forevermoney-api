@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface DailyBalanceChainRepository : MongoRepository<DailyBalanceChainEntity, String> {
-    fun findFirstByOrderByDateAsc() : DailyBalanceChainEntity?
+    fun findFirstByOrderByDateDescCreatedAtDesc() : DailyBalanceChainEntity?
 }

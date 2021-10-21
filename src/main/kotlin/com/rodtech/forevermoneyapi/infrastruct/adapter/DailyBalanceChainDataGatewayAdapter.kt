@@ -19,6 +19,6 @@ class DailyBalanceChainDataGatewayAdapter(
         repository.findAll().map { mapper.mapperToDomain(it) }
 
     override fun getLast(): DailyBalanceChain? =
-        repository.findFirstByOrderByDateAsc()?.let{ mapper.mapperToDomain(it) }
+        repository.findFirstByOrderByDateDescCreatedAtDesc()?.let{ mapper.mapperToDomain(it) }
 
 }
